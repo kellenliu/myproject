@@ -1,0 +1,31 @@
+{
+  "name": "myproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kellenliu/myproject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kellenliu/myproject/issues"
+  },
+  "homepage": "https://github.com/kellenliu/myproject#readme",
+  "dependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/helper-module-transforms": "^7.7.5",
+    "echarts": "^4.6.0",
+    "fs-extra": "^8.1.0",
+    "rollup": "^1.28.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-uglify": "^3.0.0"
+  }
+}
