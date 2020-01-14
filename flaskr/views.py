@@ -11,7 +11,13 @@ bp = Blueprint('views', __name__)
 
 @bp.route('/')
 def views():
-    return render_template('views/pie.html', posts=views)
+    db = get_db()
+    viewconts = db.execute(
+        'SELECT age_section, num, flag '
+        ' FROM carry_for_age'
+        ' ORDER BY age_section '
+    ).fetchall()
+    return render_template('views/pie.html', viewconts=viewconts)
 
 
 @bp.route('/lib')

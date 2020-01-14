@@ -8,18 +8,23 @@
 </head>
 <body>
     <div id="main" style="width: 600px;height:400px;"></div>
+    {% for viewcont in viewconts %}
+     <p >{{viewcont}}</p>
+    {% endfor %}
     <script>
         // 绘制图表。
         echarts.init(document.getElementById('main')).setOption({
             series: {
                 type: 'pie',
                 data: [
-                    {name: 'A', value: 1212},
+
                     {name: 'B', value: 2323},
                     {name: 'C', value: 1919}
                 ]
             }
         });
+
+
     </script>
 </body>
 </html>
